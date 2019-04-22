@@ -1,0 +1,23 @@
+{
+  "name": "mass-emailer",
+  "version": "1.0.0",
+  "description": "A node.js CLI tool to send bulk emails ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/haxzie/node-mass-emailer.git"
+  },
+  "keywords": [
+    "email",
+    "nodemailer"
+  ],
+  "author": "Musthaq Ahamad <musthu.gm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haxzie/node-mass-emailer/issues"
+  },
+  "homepage": "https://github.com/haxzie/node-mass-emailer#readme"
+}
