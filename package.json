@@ -1,6 +1,6 @@
 {
   "name": "mass-emailer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A node.js CLI tool to send bulk emails ",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/haxzie/node-mass-emailer/issues"
   },
-  "homepage": "https://github.com/haxzie/node-mass-emailer#readme"
+  "homepage": "https://github.com/haxzie/node-mass-emailer#readme",
+  "dependencies": {
+    "nodemailer": "^6.1.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "prompt": "^1.0.0"
+  },
+  "bin": {
+    "mass-emailer": "index.js"
+  }
 }
