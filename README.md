@@ -1,6 +1,7 @@
 # Node Mass Emailer
 A simpli CLI tool built with NodeMailer to send bulk emails by extracting emails from any given text/csv file.  
-currently, confugured only for Gmail.
+currently, confugured only for Gmail.  
+Makse sure to enable "Allow login from less secure apps" from your [gmail settings](https://support.google.com/accounts/answer/6010255?hl=en).
 
 ## Installation
 Install the CLI tool globally using NPM
