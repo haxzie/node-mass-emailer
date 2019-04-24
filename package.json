@@ -4,7 +4,7 @@
   "description": "A node.js CLI tool to send bulk emails ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
   },
   "bin": {
     "mass-emailer": "index.js"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
   }
 }

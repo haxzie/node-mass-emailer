@@ -37,7 +37,7 @@ if (!fs.existsSync(templatePath)) {
 // read the csv file and extract the email addresses
 const csv = fs.readFileSync(csvPath);
 const emails = extractEmails(csv.toString());
-if (emails.length == 0) {
+if (emails.size == 0) {
     console.error('No emails found in the provided csv');
     process.exit(0);
 }
@@ -71,7 +71,7 @@ prompt.get(inputSchema, (err, result) => {
     // create a transporter from email and password
     const transporter = emailer.getTransporter(result.email, result.password);
 
-    console.log(`Sending emails to ${emails.length} mail ID's`);
+    console.log(`Sending emails to ${emails.size} mail ID's`);
     emails.forEach(async (email) => {
         await emailer.sendMail(transporter, email, result.subject , template);
     });
