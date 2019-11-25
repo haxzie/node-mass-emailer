@@ -1,6 +1,6 @@
 {
   "name": "mass-emailer",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A node.js CLI tool to send bulk emails ",
   "main": "index.js",
   "scripts": {

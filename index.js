@@ -49,10 +49,11 @@ prompt.start();
 
 const inputSchema = {
     properties:  {
+        name: {
+            required: true
+        }, 
         email: {
             required: true,
-            pattern: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+$/,
-            message: "Enter a valid email address"
         },
         password: {
             hidden: true,
@@ -73,7 +74,7 @@ prompt.get(inputSchema, (err, result) => {
 
     console.log(`Sending emails to ${emails.size} mail ID's`);
     emails.forEach(async (email) => {
-        await emailer.sendMail(transporter, email, result.subject , template);
+        await emailer.sendMail(transporter, result.name, result.email, email, result.subject , template);
     });
 
 });
